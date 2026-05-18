@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LibraryManagement/LibraryManagement.csproj" />
+  <Project Path="LibraryManagementBLLibrary/LibraryManagementBLLibrary.csproj" />
+  <Project Path="LibraryManagementDLLibrary/LibraryManagementDLLibrary.csproj" />
+  <Project Path="LibraryManagementModelLibrary/LibraryManagementModelLibrary.csproj" />
+</Solution>
