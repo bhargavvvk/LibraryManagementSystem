@@ -15,7 +15,8 @@ namespace LibraryManagement
             BookService bookService = new BookService();
             BorrowingService borrowingService = new BorrowingService();
             ReportService reportService = new ReportService();
-            BookCategoryService bookCategoryService =new BookCategoryService();
+            BookCategoryService bookCategoryService = new BookCategoryService();
+            ValidationService validateService= new ValidationService();
             //main loop
             bool appRunning = true;
             while(appRunning)
@@ -51,11 +52,53 @@ namespace LibraryManagement
                                             {
                                                 case 1:
                                                     Console.Write("Enter member name : ");
-                                                    string name =Console.ReadLine()!;
-                                                    Console.Write("Enter email : ");
-                                                    string email = Console.ReadLine()!;
-                                                    Console.Write("Enter phone number : ");
-                                                    string phoneNumber = Console.ReadLine()!;
+                                                    string name;
+                                                    while(true)
+                                                    {
+                                                        try
+                                                        {
+                                                            Console.Write("Enter member name : ");
+                                                            name = Console.ReadLine()!;
+                                                            validateService.ValidateName(name);
+                                                            break;
+                                                        }
+                                                        catch(Exception ex)
+                                                        {
+                                                            Console.WriteLine(ex.Message);
+                                                        }
+                                                    }
+                                                    string useremail;
+                                                    while (true)
+                                                    {
+                                                        
+                                                        try
+                                                        {
+                                                            Console.Write("Enter member Email : ");
+                                                            useremail = Console.ReadLine()!;
+                                                            validateService.ValidateEmail(useremail);
+                                                            break;
+                                                        }
+                                                        catch (Exception e)
+                                                        {
+                                                            Console.WriteLine(e.Message);
+                                                        }
+                                                    }
+                                                    string phoneNumber;
+                                                    while (true)
+                                                    {
+                                                        
+                                                        try
+                                                        {
+                                                            Console.Write("Enter phone number : ");
+                                                            phoneNumber = Console.ReadLine()!;
+                                                            validateService.ValidatePhoneNumber(phoneNumber);
+                                                            break;
+                                                        }
+                                                        catch (Exception e)
+                                                        {
+                                                            Console.WriteLine(e.Message);
+                                                        }
+                                                    }
                                                     Console.WriteLine();
                                                     Console.WriteLine("Select Membership Type");
                                                     Console.WriteLine( "1. Basic");
@@ -101,7 +144,7 @@ namespace LibraryManagement
                                                     {
                                                         Name = name,
 
-                                                        Email = email,
+                                                        Email = useremail,
 
                                                         PhoneNumber = phoneNumber,
 
@@ -559,13 +602,21 @@ namespace LibraryManagement
                                         switch(viewChoice)
                                         {
                                             case 1:
+                                                var Books=bookService.GetAllBooks();
+                                                foreach (var book in Books)
+                                                {
+                                                        int availableCount = bookService.GetAvailableBookCount(book.BookId);
+                                                    DisplayHelper.PrintBook(book, availableCount);
+                                                }
+                                                break;
+                                            case 2:
                                                 Console.Write("Enter title : ");
                                                 string titleSearch = Console.ReadLine()!;
                                                 var bookByTitle = bookService.GetBookByTitle(titleSearch);
                                                 int availableCountByTitle = bookService.GetAvailableBookCount(bookByTitle.BookId);
                                                 DisplayHelper.PrintBook(bookByTitle,availableCountByTitle);
                                                 break;
-                                            case 2:
+                                            case 3:
                                                 Console.Write("Enter author : ");
                                                 string authorSearch = Console.ReadLine()!;
                                                 var booksByAuthor = bookService.GetBooksByAuthor(authorSearch);
@@ -576,7 +627,7 @@ namespace LibraryManagement
                                                     DisplayHelper.PrintBook(book, availableCount);
                                                 }
                                                 break;
-                                            case 3:
+                                            case 4:
                                                 Console.WriteLine("Select Category");
 
                                                 var categories = bookCategoryService.GetAllCategories();
@@ -608,12 +659,12 @@ namespace LibraryManagement
 
                                                 break;
 
-                                            case 4:
+                                            case 5:
 
                                                 viewBooksMenu = false;
 
-                                                break;
-                                        }
+                                                    break;
+                                            }
                                     }
                                     break;
                                     case 2:

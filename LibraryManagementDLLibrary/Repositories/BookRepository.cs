@@ -16,7 +16,6 @@ namespace LibraryManagementDLLibrary.Repositories
         {
             context.Add(book);
             context.SaveChanges();
-            // Reload the book with its navigation properties
             return Get(book.BookId)!;
         }
         

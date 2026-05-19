@@ -159,21 +159,23 @@ public static class MenuHelper
         Console.WriteLine(
             "===== VIEW BOOKS ====="
         );
-
         Console.WriteLine(
-            "1. View By Title"
+            "1. View all books"
+        );
+        Console.WriteLine(
+            "2. View By Title"
         );
 
         Console.WriteLine(
-            "2. View By Author"
+            "3. View By Author"
         );
 
         Console.WriteLine(
-            "3. View By Category"
+            "4. View By Category"
         );
 
         Console.WriteLine(
-            "4. Back"
+            "5. Back"
         );
 
         Console.WriteLine();
@@ -190,7 +192,7 @@ public static class MenuHelper
                 out choice
             )
             || choice < 1
-            || choice > 4
+            || choice > 5
         )
         {
             Console.Write(

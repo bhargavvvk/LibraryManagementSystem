@@ -80,3 +80,4 @@
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagement/obj/Debug/net10.0/LibraryManagement.pdb
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagement/obj/Debug/net10.0/LibraryManagement.genruntimeconfig.cache
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagement/obj/Debug/net10.0/ref/LibraryManagement.dll
+/Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagement/obj/Debug/net10.0/LibraryManagement.sourcelink.json

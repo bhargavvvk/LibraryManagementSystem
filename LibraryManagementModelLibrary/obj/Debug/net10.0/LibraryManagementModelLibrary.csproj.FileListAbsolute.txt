@@ -9,3 +9,4 @@
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementModelLibrary/obj/Debug/net10.0/refint/LibraryManagementModelLibrary.dll
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementModelLibrary/obj/Debug/net10.0/LibraryManagementModelLibrary.pdb
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementModelLibrary/obj/Debug/net10.0/ref/LibraryManagementModelLibrary.dll
+/Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementModelLibrary/obj/Debug/net10.0/LibraryManagementModelLibrary.sourcelink.json

@@ -61,3 +61,4 @@
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementDLLibrary/obj/Debug/net10.0/LibraryManagementDLLibrary.pdb
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementDLLibrary/obj/Debug/net10.0/LibraryManagementDLLibrary.genruntimeconfig.cache
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementDLLibrary/obj/Debug/net10.0/ref/LibraryManagementDLLibrary.dll
+/Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementDLLibrary/obj/Debug/net10.0/LibraryManagementDLLibrary.sourcelink.json

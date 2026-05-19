@@ -61,3 +61,4 @@
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementBLLibrary/obj/Debug/net10.0/refint/LibraryManagementBLLibrary.dll
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementBLLibrary/obj/Debug/net10.0/LibraryManagementBLLibrary.pdb
 /Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementBLLibrary/obj/Debug/net10.0/ref/LibraryManagementBLLibrary.dll
+/Users/bhargavkokkula/Documents/LibraryManagementSolution/LibraryManagementBLLibrary/obj/Debug/net10.0/LibraryManagementBLLibrary.sourcelink.json
